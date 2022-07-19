@@ -1,0 +1,283 @@
+@media (max-width: 1024px) {
+  .header .header_nav a {
+    color: #000;
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  #check,
+  .burger_menu,
+  menu {
+    display: block;
+  }
+
+  .header .header_nav ul {
+    display: none;
+  }
+
+  .burger_menu {
+    z-index: 0;
+  }
+
+  .burger_menu,
+  input[type="checkbox"] {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .burger_menu span {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+  }
+
+  .burger_menu span:nth-child(1) {
+    top: 0;
+  }
+
+  .burger_menu span:nth-child(2) {
+    top: 15px;
+  }
+
+  .burger_menu span:nth-child(3) {
+    top: 30px;
+  }
+
+  input[type="checkbox"]:checked ~ menu {
+    visibility: visible;
+    right: 0;
+  }
+
+  input[type="checkbox"] {
+    opacity: 0;
+    z-index: 3;
+  }
+
+  input[type="checkbox"]:checked ~ .burger_menu {
+    z-index: 2;
+  }
+
+  input[type="checkbox"]:checked ~ .burger_menu span {
+    background-color: #000;
+  }
+
+  input[type="checkbox"]:checked ~ .burger_menu span:nth-child(3) {
+    visibility: hidden;
+  }
+
+  input[type="checkbox"]:checked ~ .burger_menu span:nth-child(2) {
+    transform: rotate(45deg);
+    top: 16px;
+  }
+
+  input[type="checkbox"]:checked ~ .burger_menu span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 16px;
+  }
+
+  .burger_menu span {
+    transition: background-color 1s linear;
+  }
+
+  menu {
+    z-index: 1;
+    display: grid;
+    row-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    width: 310px;
+    height: 530px;
+    position: absolute;
+    background-color: #c9cbca;
+    right: -25vw;
+    color: #fff;
+    font-size: -36px;
+    visibility: hidden;
+    transition: right 1s, visibility 0.8s linear;
+    list-style: none;
+    opacity: 0.9;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .block_1 {
+    max-width: 1024px;
+    margin-bottom: 70px;
+  }
+
+  .block_1 .block_1_content {
+    max-width: 518px;
+    margin-left: 20px;
+  }
+
+  .block_1 .block_1_image img {
+    width: 100%;
+  }
+
+  .block_1 .block_1_image {
+    max-width: 470px;
+    margin-right: 20px;
+  }
+
+  .block_2 {
+    height: 500px;
+  }
+
+  .block_2 .block_2_card .card_element {
+    max-width: 240px;
+  }
+
+  .block_2 .block_2_card {
+    width: 100%;
+    margin-bottom: 60px;
+    justify-items: end;
+  }
+
+  .block_3 {
+    max-width: 1024px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .block_3 .block_3_content {
+    margin-left: 20px;
+  }
+
+  .block_3 .block_3_image {
+    max-width: 470px;
+  }
+
+  .block_3 .block_3_image img {
+    width: 100%;
+  }
+
+  .block_4 {
+    max-width: 1024px;
+    margin: 0 auto 80px auto;
+    grid-gap: 70px;
+  }
+
+  .block_4_image {
+    margin-left: 20px;
+  }
+
+  .block_4_image img {
+    width: 100%;
+  }
+
+  .block_5 {
+    max-width: 1024px;
+    margin: 0 0 80px 0;
+    grid-gap: 0;
+  }
+
+  .block_5_content {
+    margin-left: 20px;
+  }
+
+  .block_5 .block_5_image {
+    max-width: 470px;
+    margin-right: 20px;
+  }
+
+  .block_5 .block_5_image img {
+    width: 100%;
+  }
+
+  .block_6 {
+    margin: 0;
+    max-width: 1024px;
+  }
+
+  .block_6 h2 {
+    margin-left: 20px;
+  }
+
+  .block_6 span {
+    margin-left: 20px;
+  }
+
+  .block_6 .block_6_blocks {
+    grid-gap: 0 10px;
+    justify-items: center;
+  }
+
+  /* .block_6 .block_6_blocks .block_6_block1, .block_6_block2 {
+        max-width: 300px;
+    } */
+
+  .block_6 .block_6_blocks .block_6_block1 img {
+    width: 100%;
+  }
+
+  .block_6 .block_6_blocks .block_6_block2 img {
+    width: 100%;
+  }
+
+  .block_6 .circle_container {
+    margin: 20px auto;
+  }
+
+  .footer {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .footer .footer_logo {
+    margin-right: 50px;
+  }
+
+  .footer .footer_block1 {
+    margin-right: 90px;
+  }
+
+  .footer_block3 .block_5_form input {
+    width: 190px;
+  }
+
+  @media (max-width: 768px) {
+    .header_button {
+      display: none;
+    }
+
+    .burger_menu,
+    input[type="checkbox"] {
+      right: 40px;
+    }
+
+    .block_1 {
+      display: block;
+    }
+
+    .block_1 .block_1_content {
+      margin: 0 auto;
+    }
+
+    .block_1 .block_1_image {
+      margin: 0 auto;
+    }
+
+    .block_4 .block_4_content {
+      margin-right: 10px;
+    }
+
+    .footer .footer_logo {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .footer .footer_block1 {
+      margin-right: 20px;
+    }
+
+    .footer .footer_block2 {
+      margin-right: 20px;
+    }
+  }
+}
